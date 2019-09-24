@@ -1,5 +1,6 @@
 # cube-racer
 
+## TO DO:
 1. Include "space" input to skip wait time during level transitions
 2. Include current level fade in/out during level start
 3. Add "high score" at top right corner during game
