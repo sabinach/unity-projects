@@ -1,3 +1,5 @@
 # Ignore /library folders
 01-UnityOverview/Library
+01-UnityOverview/Temp
 02-BrackeysBeginner/Library
+02-BrackeysBeginner/Temp
