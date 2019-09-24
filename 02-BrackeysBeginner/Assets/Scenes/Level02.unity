@@ -898,6 +898,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 5771373724639289146, guid: 7e280696c640147a29ce3e7387a9617e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5771373724639289150, guid: 7e280696c640147a29ce3e7387a9617e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1008,6 +1013,31 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1542452498}
+    - target: {fileID: 5771373724632431264, guid: 7e280696c640147a29ce3e7387a9617e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5771373726253244953, guid: 7e280696c640147a29ce3e7387a9617e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5771373726253244954, guid: 7e280696c640147a29ce3e7387a9617e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5771373726253244955, guid: 7e280696c640147a29ce3e7387a9617e,
+        type: 3}
+      propertyPath: m_Text
+      value: LEVEL02
+      objectReference: {fileID: 0}
+    - target: {fileID: 5771373726253244955, guid: 7e280696c640147a29ce3e7387a9617e,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 74
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e280696c640147a29ce3e7387a9617e, type: 3}
 --- !u!1001 &5964631453336645154
