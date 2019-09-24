@@ -6,7 +6,16 @@ public class GameManager : MonoBehaviour
 	// make sure game is ended only once
 	bool gameHasEnded = false;
 
+    // delay time (sec) during game restart
 	public float restartDelay = 1f;
+
+    public GameObject completeLevelUI;
+
+    public void CompleteLevel()
+    {
+        Debug.Log("LEVEL WON");
+        completeLevelUI.SetActive(true);
+    }
 
     public void EndGame()
     {
