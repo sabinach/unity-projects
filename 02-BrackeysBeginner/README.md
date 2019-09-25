@@ -9,3 +9,5 @@
 6. High score panel allows player to add own name to table, immediate update, and saves info for next plays. Include optional "reset high scores" button on bottom, and "Back" button.
 7. Make level endless and random obstacle generation.
 8. Allow player to change block color at start menu with "Settings" button.
+9. Change WASD to horizontal/vertical
+10. Deduct for falling off + hitting objects?
