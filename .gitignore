@@ -1,10 +1,6 @@
-# Ignore /library folders
-01-UnityOverview/Library
-01-UnityOverview/Temp
-02-BrackeysBeginner/Library
-02-BrackeysBeginner/Temp
-03-MultiCamera/Library
-03-MultiCamera/Temp
+# Ignore Unity tmp folders
+/**/Library
+/**/Temp
 
 # Visual Studio code generated files
 *.csproj
