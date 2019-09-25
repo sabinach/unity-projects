@@ -5,3 +5,7 @@
 02-BrackeysBeginner/Temp
 03-MultiCamera/Library
 03-MultiCamera/Temp
+
+# Visual Studio code generated files
+*.csproj
+*.sln
