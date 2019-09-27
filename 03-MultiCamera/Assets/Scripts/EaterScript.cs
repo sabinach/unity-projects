@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class EaterFunctions : MonoBehaviour
+public class EaterScript : MonoBehaviour
 {
 	// player objects
 	public GameObject player1;
@@ -16,12 +16,25 @@ public class EaterFunctions : MonoBehaviour
 	public Text scoreText1;
 	public Text scoreText2;
 
+	// ground variables
+	public Transform ground;
+	private float groundMinY;
+
     // Start is called before the first frame update
     void Start()
     {
         // scores
 		score1 = scoreText1.GetComponent<Score>();
 		score2 = scoreText2.GetComponent<Score>();
+
+		// bottom of ground
+		groundMinY = -ground.lossyScale.y;
+    }
+
+    void Update()
+    {
+    	if(transform.position.y < groundMinY)
+    		Destroy(gameObject);
     }
 
 	void OnCollisionEnter(Collision collision)
