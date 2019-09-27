@@ -1,4 +1,4 @@
-# cube-racer
+# cubethon
 
 ## TO DO:
 1. Include "space" input to skip wait time during level transitions
@@ -11,3 +11,4 @@
 8. Allow player to change block color at start menu with "Settings" button.
 9. Change WASD to horizontal/vertical
 10. Deduct for falling off + hitting objects?
+11. Change name to cubethon
