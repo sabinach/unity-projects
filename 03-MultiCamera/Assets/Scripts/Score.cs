@@ -6,8 +6,12 @@ public class Score : MonoBehaviour
     public Transform player;
     public Text scoreText;
 
+    // player score (to be updated)
+    public float score = 0f;
+
     void Update()
     {
-    	scoreText.text = player.position.z.ToString("0");
+    	// display score text
+    	scoreText.text = score.ToString();
     }
 }

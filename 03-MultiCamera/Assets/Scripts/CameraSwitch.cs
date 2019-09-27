@@ -3,12 +3,12 @@ using UnityEngine.UI;
 
 public class CameraSwitch : MonoBehaviour
 {
-    public GameObject camera1;
     public GameObject camera2;
+    public GameObject camera1;
     public GameObject cameraStatic;
     public GameObject cameraMinimap;
     public GameObject score1;
-    //public Text score2;
+    public GameObject score2;
 
     void Start()
     {
@@ -30,7 +30,7 @@ public class CameraSwitch : MonoBehaviour
     	camera1.SetActive(true);
     	camera2.SetActive(true);
         score1.SetActive(true);
-        //score2.SetActive(true);
+        score2.SetActive(true);
     	cameraStatic.SetActive(false);
         cameraMinimap.SetActive(false);
     }
@@ -40,7 +40,7 @@ public class CameraSwitch : MonoBehaviour
     	camera1.SetActive(false);
     	camera2.SetActive(false);
         score1.SetActive(false);
-        //score2.SetActive(false);
+        score2.SetActive(false);
     	cameraStatic.SetActive(true);
         cameraMinimap.SetActive(false);
     }
@@ -50,7 +50,7 @@ public class CameraSwitch : MonoBehaviour
         camera1.SetActive(false);
         camera2.SetActive(false);
         score1.SetActive(false);
-        //score2.SetActive(false);
+        score2.SetActive(false);
         cameraStatic.SetActive(false);
         cameraMinimap.SetActive(true);
     }

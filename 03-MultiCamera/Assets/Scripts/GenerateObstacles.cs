@@ -4,7 +4,7 @@ public class GenerateObstacles : MonoBehaviour
 {
 	// get obstacle prefab
 	public GameObject obstacle;
-	[SerializeField] private int numObjects = 5;
+	[SerializeField] private int numObjects = 15;
 
 	// ground dimensions
 	public Transform ground;
@@ -12,6 +12,10 @@ public class GenerateObstacles : MonoBehaviour
 	private float groundMaxX;
 	private float groundMinZ;
 	private float groundMaxZ;
+	private float groundY;
+
+	// object y scale;
+	private float obstacleY;
 
 	void Start()
 	{
@@ -21,12 +25,19 @@ public class GenerateObstacles : MonoBehaviour
 		groundMinZ = ground.lossyScale.z / -2f;
 		groundMaxZ = ground.lossyScale.z / 2f;
 
+		// bottom of ground
+        groundY = ground.lossyScale.y;
+
+        // current obstacle's y scale
+        obstacleY = transform.lossyScale.y;
+
+		// generate specified number of obstacles
 		Generate();
 	}
 
 	void Generate()
 	{
-		for(int i = 0; i < numObjects; ++i)
+		for(int i = 0; i < numObjects-1; ++i)
 		{
 			// create new obstacle object
 			GameObject newObstacle = Instantiate(obstacle) as GameObject;
@@ -34,9 +45,7 @@ public class GenerateObstacles : MonoBehaviour
 			// random position within ground bounds
 			float randomX = UnityEngine.Random.Range(groundMinX, groundMaxX);
 	    	float randomZ = UnityEngine.Random.Range(groundMinZ, groundMaxZ);
-	    	newObstacle.transform.position = new Vector3(randomX, 1.5f, randomZ);
-
-	    	Debug.Log(i);
+	    	newObstacle.transform.position = new Vector3(randomX, groundY + obstacleY, randomZ);
 		}
 	}
 }

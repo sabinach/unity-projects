@@ -1,7 +1,9 @@
 # Ignore Unity tmp folders
 /**/Library
 /**/Temp
+/**/obj
 
 # Visual Studio code generated files
 *.csproj
 *.sln
+*.vs
