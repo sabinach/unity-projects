@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     
     [SerializeField] private float speed = 10f;
     [SerializeField] private float rotateSpeed = 50f;
-    [SerializeField] private float respawnTime = 3f;
+    //[SerializeField] private float respawnTime = 3f;
 
     private Vector3 movement;
     private float rotation;

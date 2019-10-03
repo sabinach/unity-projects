@@ -7,10 +7,11 @@ public class GenerateObjects : MonoBehaviour
 	public GameObject plower;
 	public GameObject eater;
 	public GameObject treat;
-	[SerializeField] private int numObstacles = 15;
-	[SerializeField] private int numPlowers = 5;
-	[SerializeField] private int numEaters = 3;
-	[SerializeField] private int numTreats = 4;
+
+	public int numObstacles = 15;
+	public int numPlowers = 5;
+	public int numEaters = 3;
+	public int numTreats = 4;
 
 	// ground dimensions
 	public Transform ground;
