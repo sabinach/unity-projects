@@ -1,4 +1,4 @@
-# MultiCamera
+# MultiCamera (aka. Clear The Way!)
 
 ## TODO
 1. add minimap player toggle (follows player)
@@ -10,3 +10,4 @@
 7. faster turn speed
 8. add back 1- and 2- player options
 9. add back custom option
+10. timer based leveling, with speed variability of obstacle generation based on level selection
