@@ -8,4 +8,5 @@
 5. title screen (start game, settings [back], controls [back]), winner screen (play again, quit)
 6. no high scores
 7. faster turn speed
-
+8. add back 1- and 2- player options
+9. add back custom option
