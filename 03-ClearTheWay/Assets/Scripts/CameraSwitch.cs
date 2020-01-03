@@ -45,15 +45,15 @@ public class CameraSwitch : MonoBehaviour
             MapView();
 
         // player map toggle
-        if(Input.GetKeyDown(KeyCode.LeftShift) && Input.GetKey(KeyCode.LeftControl))
+        if( Input.GetKeyDown(KeyCode.LeftShift) && (Input.GetKey(KeyCode.LeftControl) || Input.GetKey(KeyCode.LeftApple)) )
         	Map1();
-        if(Input.GetKeyDown(KeyCode.RightShift) && Input.GetKey(KeyCode.RightControl))
+        if(Input.GetKeyDown(KeyCode.RightShift) && (Input.GetKey(KeyCode.RightControl) || Input.GetKey(KeyCode.RightApple)))
         	Map2();
 
         // player minimap toggle
-        if(Input.GetKeyDown(KeyCode.LeftShift) && !(Input.GetKey(KeyCode.LeftControl)))
+        if(Input.GetKeyDown(KeyCode.LeftShift) && !(Input.GetKey(KeyCode.LeftControl)) && !(Input.GetKey(KeyCode.LeftApple)))
         	Minimap1();
-        if(Input.GetKeyDown(KeyCode.RightShift) && !(Input.GetKey(KeyCode.RightControl)))
+        if(Input.GetKeyDown(KeyCode.RightShift) && !(Input.GetKey(KeyCode.RightControl)) && !(Input.GetKey(KeyCode.RightApple)))
         	Minimap2();
     }
 

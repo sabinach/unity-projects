@@ -8,10 +8,10 @@ public class GenerateObjects : MonoBehaviour
 	public GameObject eater;
 	public GameObject treat;
 
-	public int numObstacles = 15;
-	public int numPlowers = 5;
-	public int numEaters = 3;
-	public int numTreats = 4;
+	public int numObstacles;
+	public int numPlowers;
+	public int numEaters;
+	public int numTreats;
 
 	// ground dimensions
 	public Transform ground;

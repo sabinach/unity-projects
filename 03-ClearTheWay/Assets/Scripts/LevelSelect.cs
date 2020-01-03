@@ -19,24 +19,38 @@ public class LevelSelect : MonoBehaviour
 	public Text hardNumObjText;
 
 	// 2 players
-	[SerializeField] private int two_easy_obstacles = 5;
-	[SerializeField] private int two_easy_plowers = 2;
-	[SerializeField] private int two_easy_eaters = 2;
-	[SerializeField] private int two_easy_treats = 5;
+	public int two_easy_obstacles;
+	public int two_easy_plowers;
+	public int two_easy_eaters;
+	public int two_easy_treats;
 
-	[SerializeField] private int two_medium_obstacles = 10;
-	[SerializeField] private int two_medium_plowers = 4;
-	[SerializeField] private int two_medium_eaters = 4;
-	[SerializeField] private int two_medium_treats = 10;
+	public int two_medium_obstacles;
+	public int two_medium_plowers;
+	public int two_medium_eaters;
+	public int two_medium_treats;
 
-	[SerializeField] private int two_hard_obstacles = 15;
-	[SerializeField] private int two_hard_plowers = 6;
-	[SerializeField] private int two_hard_eaters = 6;
-	[SerializeField] private int two_hard_treats = 15;
+	public int two_hard_obstacles;
+	public int two_hard_plowers;
+	public int two_hard_eaters;
+	public int two_hard_treats;
 
 	void Start()
 	{
 		// update level description (based on num players + level)
+		two_easy_obstacles = 5;
+		two_easy_plowers = 2;
+		two_easy_eaters = 2;
+		two_easy_treats = 10;
+
+		two_medium_obstacles = 10;
+		two_medium_plowers = 4;
+		two_medium_eaters = 4;
+		two_medium_treats = 15;
+
+		two_hard_obstacles = 15;
+		two_hard_plowers = 6;
+		two_hard_eaters = 6;
+		two_hard_treats = 20;
 
 		// ******* 2 players ******* //
 		SetLevelText(easyNumObjText, two_easy_obstacles, two_easy_plowers, two_easy_eaters, two_easy_treats); // easy
